@@ -1,0 +1,35 @@
+{
+  "name": "js-hiring-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon -r dotenv/config --exec 'ts-node' src/index.ts",
+    "test": "jest --setupFiles dotenv/config --forceExit --coverage --verbose --detectOpenHandles --testPathPattern src/**/*spec.ts",
+    "test-watch": "jest --setupFiles dotenv/config --watch --forceExit --coverage --verbose --detectOpenHandles --testPathPattern src/**/*spec.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.22",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.4",
+    "@types/mongoose": "^5.7.30",
+    "@types/node": "^14.0.19",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.1.0",
+    "mongodb-memory-server": "^6.9.6",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.1.1"
+  }
+}
